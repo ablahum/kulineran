@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="foods">
     <NavbarComp />
 
-    <h1>ini page home</h1>
+    <h2>Daftar Makanan</h2>
 
     <FooterComp />
   </div>
@@ -12,7 +12,7 @@
 import { NavbarComp, FooterComp } from '@/components';
 
 export default {
-  name: 'HomeView',
+  name: 'FoodsView',
   components: {
     NavbarComp,
     FooterComp,
