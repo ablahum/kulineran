@@ -1,5 +1,5 @@
 import HomeView from './HomeView';
-import AboutView from './AboutView';
-import AblahumView from './AblahumView';
+import FoodsView from './FoodsView';
+import CartView from './CartView';
 
-export { HomeView, AboutView, AblahumView };
+export { HomeView, FoodsView, CartView };
