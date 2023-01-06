@@ -1,0 +1,18 @@
+#app {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* primary: #4eb883
+secondary: #e9f9f4 */
+
+.router-link-exact-active {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: tomato;
+}
+
+.text-bg-primary {
+  background-color: tomato;
+}
