@@ -1,20 +1,23 @@
 <template>
   <div class="home">
-    <NavbarComp />
+    <div class="container">
+      <NavbarComp />
 
-    <h1>ini page home</h1>
+      <HeroComp />
+    </div>
 
     <FooterComp />
   </div>
 </template>
 
 <script>
-import { NavbarComp, FooterComp } from '@/components';
+import { NavbarComp, HeroComp, FooterComp } from '@/components';
 
 export default {
   name: 'HomeView',
   components: {
     NavbarComp,
+    HeroComp,
     FooterComp,
   },
 };
