@@ -47,7 +47,8 @@
             to="/cart"
           >
             Keranjang
-            <span class="badge text-bg-primary">4</span>
+
+            <span class="badge bg-primary">4</span>
           </router-link>
         </li>
       </ul>

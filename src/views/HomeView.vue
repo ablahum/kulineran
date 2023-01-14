@@ -6,7 +6,7 @@
       <HeroComp />
     </div>
 
-    <FooterComp />
+    <!-- <FooterComp /> -->
   </div>
 </template>
 

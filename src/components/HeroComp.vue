@@ -7,7 +7,7 @@
 
           <p>Ayo segera pilih pesan makanan favorit Anda!</p>
 
-          <button class="btn btn-primary">pesan sekarang</button>
+          <button class="btn btn-primary">Pesan Sekarang</button>
         </div>
       </div>
     </div>
