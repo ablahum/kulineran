@@ -2,17 +2,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* primary: #4eb883
-secondary: #e9f9f4 */
+:root {
+  --primary: #4eb883;
+  --white: #e9f9f4;
+}
 
 .router-link-exact-active {
   font-weight: bold;
 }
 
-.btn-primary {
-  background-color: tomato;
-}
-
-.text-bg-primary {
-  background-color: tomato;
+.btn-primary,
+.bg-primary {
+  background-color: var(--primary) !important;
+  border-color: inherit;
 }
