@@ -1,5 +1,3 @@
-import HomeView from './HomeView';
-import FoodsView from './FoodsView';
-import CartView from './CartView';
-
-export { HomeView, FoodsView, CartView };
+export { default as HomeView } from './HomeView'
+export { default as FoodsView } from './FoodsView'
+export { default as CartView } from './CartView'

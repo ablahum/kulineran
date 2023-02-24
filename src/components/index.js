@@ -1,5 +1,3 @@
-import NavbarComp from './NavbarComp';
-import FooterComp from './FooterComp';
-import HeroComp from './HeroComp';
-
-export { NavbarComp, HeroComp, FooterComp };
+export { default as NavbarComp } from './NavbarComp'
+export { default as HeroComp } from './HeroComp'
+export { default as FooterComp } from './FooterComp'

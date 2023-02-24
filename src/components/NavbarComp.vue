@@ -5,7 +5,6 @@
       href="#"
       >KULINERAN</a
     >
-
     <button
       class="navbar-toggler"
       type="button"
@@ -35,7 +34,7 @@
           <router-link
             class="nav-link"
             to="/foods"
-            >Foods</router-link
+            >Makanan</router-link
           >
         </li>
       </ul>
@@ -45,10 +44,14 @@
           <router-link
             class="nav-link"
             to="/cart"
-          >
-            Keranjang
+            >KERANJANG
 
-            <span class="badge bg-primary">4</span>
+            <font-awesome-icon
+              icon="fa-solid fa-bag-shopping"
+              class="ms-2 me-1"
+            />
+
+            <span class="badge bg-primary">99+</span>
           </router-link>
         </li>
       </ul>
@@ -59,5 +62,5 @@
 <script>
 export default {
   name: 'NavbarComp',
-};
+}
 </script>
