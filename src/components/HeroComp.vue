@@ -1,22 +1,25 @@
 <template>
-  <div class="row mt-4">
-    <div class="col">
-      <div class="d-flex h-100">
-        <div class="justify-content-center align-self-center">
-          <h2>Makanan lezat, <br /><strong>dalam genggaman Anda.</strong></h2>
+  <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center py-5">
+    <div class="d-flex flex-column align-items-start w-50">
+      <h2><strong>Makanan lezat,</strong><br />dalam genggaman Anda.</h2>
 
-          <p>Ayo segera pilih pesan makanan favorit Anda!</p>
+      <p class="mt-3 mb-4">Ayo segera pilih dan pesan makanan favorit Anda!</p>
 
-          <button class="btn btn-primary">Pesan Sekarang</button>
-        </div>
-      </div>
+      <rounter-link
+        to="/"
+        class="btn btn-primary"
+        ><font-awesome-icon
+          icon="fa-solid fa-arrow-right"
+          class="me-2"
+        />PESAN SEKARANG</rounter-link
+      >
     </div>
 
-    <div class="col">
+    <div class="w-50">
       <img
         src="../assets/hero.svg"
-        alt="eating together"
-        width="400"
+        alt="hero"
+        class="w-100"
       />
     </div>
   </div>
@@ -25,5 +28,5 @@
 <script>
 export default {
   name: 'HeroComp',
-};
+}
 </script>
