@@ -1,16 +1,18 @@
 <template>
-  <div class="foods">
+  <div class="foods container">
     <NavbarComp />
 
     <h1>Daftar makanan</h1>
+
+    <FooterComp />
   </div>
 </template>
 
 <script>
-import { NavbarComp } from '@/components'
+import { FooterComp, NavbarComp } from '@/components'
 
 export default {
   name: 'FoodsView',
-  components: { NavbarComp },
+  components: { NavbarComp, FooterComp },
 }
 </script>
