@@ -1,22 +1,10 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <a
-      class="navbar-brand"
       href="#home"
+      class="navbar-brand"
       >KULINERAN</a
     >
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
     <div
       class="collapse navbar-collapse"
@@ -49,7 +37,7 @@
 
             <font-awesome-icon
               icon="fa-solid fa-bag-shopping"
-              class="ms-2 me-1"
+              class="mx-2"
             />
 
             <span class="badge bg-primary">99+</span>
@@ -57,6 +45,18 @@
         </li>
       </ul>
     </div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 </template>
 
