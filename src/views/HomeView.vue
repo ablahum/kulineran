@@ -1,22 +1,22 @@
 <template>
   <div class="home container">
-    <NavbarComp />
+    <NavbarCont />
 
-    <HeroComp />
+    <HeroCont />
 
-    <BestFoodsComp :products="products" />
+    <BestFoodsCont :products="products" />
 
-    <!-- <FooterComp /> -->
+    <!-- <FooterCont /> -->
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import { FooterComp, HeroComp, NavbarComp, BestFoodsComp } from '@/components'
+import { FooterCont, HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
 
 export default {
   name: 'HomeView',
-  components: { NavbarComp, HeroComp, FooterComp, BestFoodsComp },
+  components: { NavbarCont, HeroCont, FooterCont, BestFoodsCont },
 
   data() {
     return {
@@ -25,9 +25,10 @@ export default {
   },
 
   methods: {
-    async getProducts() {
+    async getBestProducts() {
       try {
-        const res = await axios.get('http://localhost:3000/best-products')
+        const url = 'http://localhost:3000/best-products'
+        const res = await axios.get(url)
 
         this.products = res.data
       } catch (err) {
@@ -37,7 +38,7 @@ export default {
   },
 
   mounted() {
-    this.getProducts()
+    this.getBestProducts()
   },
 }
 </script>

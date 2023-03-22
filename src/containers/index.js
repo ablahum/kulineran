@@ -1,0 +1,5 @@
+export { default as NavbarCont } from './NavbarCont'
+export { default as HeroCont } from './HeroCont'
+export { default as FooterCont } from './FooterCont'
+export { default as BestFoodsCont } from './BestFoodsCont'
+export { default as FoodsCont } from './FoodsCont'

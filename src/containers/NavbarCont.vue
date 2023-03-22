@@ -15,7 +15,7 @@
           <router-link
             class="nav-link"
             to="/"
-            >Home</router-link
+            >Beranda</router-link
           >
         </li>
 
@@ -62,6 +62,6 @@
 
 <script>
 export default {
-  name: 'NavbarComp',
+  name: 'NavbarCont',
 }
 </script>
