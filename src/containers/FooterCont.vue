@@ -2,6 +2,6 @@
 
 <script>
 export default {
-  name: 'FooterComp',
+  name: 'FooterCont',
 }
 </script>
