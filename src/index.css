@@ -31,3 +31,8 @@ p {
   background-color: var(--primary) !important;
   border-color: inherit;
 }
+
+.btn-outline-primary {
+  color: #000;
+  border-color: var(--primary);
+}

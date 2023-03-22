@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div
-      class="col-md-4 mb-4 mb-md-0"
+      class="col-md-4 mb-5 mb-md-0"
       v-for="product in products"
       :key="product.id"
     >
