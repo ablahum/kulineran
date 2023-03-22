@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5">
+  <div class="py-md-5 py-4">
     <div class="d-flex justify-content-between mb-4">
       <div>
         <h2>Best <span class="fw-bold">Foods</span></h2>
