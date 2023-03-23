@@ -12,11 +12,13 @@
 
 <script>
 import axios from 'axios'
-import { FooterCont, HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
+// import { FooterCont, HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
+import { HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
 
 export default {
   name: 'HomeView',
-  components: { NavbarCont, HeroCont, FooterCont, BestFoodsCont },
+  // components: { NavbarCont, HeroCont, FooterCont, BestFoodsCont },
+  components: { NavbarCont, HeroCont, BestFoodsCont },
 
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-md-4 col-12 mb-5 mb-md-0"
+    class="col-lg-4 col-md-6 col-12 mb-4"
     v-for="product in products"
     :key="product.id"
   >
@@ -15,32 +15,22 @@
 
         <p class="card-text mt-2 mb-3">Harga: Rp. {{ product.price }}</p>
 
-        <!-- <a
+        <a
           href="#"
           class="btn btn-primary"
           ><font-awesome-icon
             icon="fa-solid fa-cart-shopping"
             class="me-2"
-          />Pesan</a
-        > -->
-
-        <ButtonComp
-          :destination="'/'"
-          :btnType="'btn-primary'"
-          :iconName="'fa-cart-shopping'"
-          :title="'Pesan'"
-        />
+          />PESAN</a
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { ButtonComp } from '@/components'
-
 export default {
   name: 'FoodCardComp',
-  components: { ButtonComp },
   props: {
     products: Object,
   },
