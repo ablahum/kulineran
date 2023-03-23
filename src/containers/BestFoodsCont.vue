@@ -1,6 +1,6 @@
 <template>
   <div class="py-5">
-    <div class="row mb-3">
+    <div class="row mb-4">
       <div class="col-6">
         <h2>Menu <span class="fw-bold">Terbaik</span></h2>
       </div>

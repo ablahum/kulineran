@@ -3,10 +3,10 @@
     <div class="order-lg-1 order-2 mt-lg-0 mt-4 d-flex flex-column align-items-start w-lg-50 w-100">
       <h1 class="fs-1"><span class="fw-bold">Makanan lezat,</span><br />dalam genggaman Anda.</h1>
 
-      <p class="mt-3 mb-lg-4 mb-3 fs-4">Ayo segera pilih dan pesan makanan favorit Anda!</p>
+      <p class="mt-3 mb-lg-4 mb-3 fs-4">Ayo segera pilih dan pesan<br class="d-lg-block d-none" />makanan favorit Anda!</p>
 
       <ButtonComp
-        :destination="'/'"
+        :destination="'/foods'"
         :btnType="'btn-primary'"
         :iconName="'fa-arrow-right'"
         :title="'PESAN SEKARANG'"
