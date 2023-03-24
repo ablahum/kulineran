@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 
-import { HomeView, FoodsView, CartView } from '@/views';
+import { HomeView, FoodsView, FoodDetailView, CartView } from '@/views'
 
 const routes = [
   {
@@ -14,15 +14,20 @@ const routes = [
     component: FoodsView,
   },
   {
+    path: '/products/:id',
+    name: 'food',
+    component: FoodDetailView,
+  },
+  {
     path: '/cart',
     name: 'cart',
     component: CartView,
   },
-];
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
+})
 
-export default router;
+export default router

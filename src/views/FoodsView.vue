@@ -4,13 +4,13 @@
 
     <FoodsCont
       :products="products"
-      :keyword="handleKeyword"
+      :keyword="handleSearch"
     />
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import { getAllProducts, getProductBySearch } from '@/apis'
 import { FoodsCont, NavbarCont } from '@/containers'
 
 export default {
@@ -24,10 +24,9 @@ export default {
   },
 
   methods: {
-    async getAllProducts() {
+    async getAll() {
       try {
-        const url = 'http://localhost:3000/products'
-        const res = await axios.get(url)
+        const res = await getAllProducts()
 
         this.products = res.data
       } catch (err) {
@@ -35,10 +34,9 @@ export default {
       }
     },
 
-    async getSpecificProduct(params) {
+    async getOne(params) {
       try {
-        const url = `http://localhost:3000/products?q=${params}`
-        const res = await axios.get(url)
+        const res = await getProductBySearch(params)
 
         this.products = res.data
       } catch (err) {
@@ -46,17 +44,17 @@ export default {
       }
     },
 
-    handleKeyword(e) {
+    handleSearch(e) {
       if (e.target.value) {
-        this.getSpecificProduct(e.target.value)
+        this.getOne(e.target.value)
       } else {
-        this.getAllProducts()
+        this.getAll()
       }
     },
   },
 
   mounted() {
-    this.getAllProducts()
+    this.getAll()
   },
 }
 </script>

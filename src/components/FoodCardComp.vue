@@ -15,13 +15,13 @@
 
         <p class="card-text mt-2 mb-3">Harga: Rp. {{ product.price }}</p>
 
-        <a
-          href="#"
+        <router-link
+          :to="'/products/' + product.id"
           class="btn btn-primary"
           ><font-awesome-icon
             icon="fa-solid fa-cart-shopping"
             class="me-2"
-          />PESAN</a
+          />PESAN</router-link
         >
       </div>
     </div>
@@ -31,6 +31,7 @@
 <script>
 export default {
   name: 'FoodCardComp',
+
   props: {
     products: Object,
   },
