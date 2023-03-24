@@ -1,12 +1,14 @@
 <template>
   <div class="py-5">
     <div class="row mb-4">
+      <BreadcrumbComp />
+
       <div class="col">
         <h2>Daftar <span class="fw-bold">Makanan</span></h2>
       </div>
 
       <div class="col">
-        <div class="input-group mb-3">
+        <div class="input-group">
           <input
             type="text"
             class="form-control"
@@ -35,11 +37,11 @@
 </template>
 
 <script>
-import { FoodCardComp } from '@/components'
+import { FoodCardComp, BreadcrumbComp } from '@/components'
 
 export default {
   name: 'FoodsCont',
-  components: { FoodCardComp },
+  components: { FoodCardComp, BreadcrumbComp },
   props: {
     products: Object,
     keyword: Function,

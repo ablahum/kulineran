@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { getBestProducts } from '@/apis'
 // import { FooterCont, HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
 import { HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
 
@@ -27,10 +27,9 @@ export default {
   },
 
   methods: {
-    async getBestProducts() {
+    async getProducts() {
       try {
-        const url = 'http://localhost:3000/best-products'
-        const res = await axios.get(url)
+        const res = await getBestProducts()
 
         this.products = res.data
       } catch (err) {
@@ -40,7 +39,7 @@ export default {
   },
 
   mounted() {
-    this.getBestProducts()
+    this.getProducts()
   },
 }
 </script>

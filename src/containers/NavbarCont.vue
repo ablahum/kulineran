@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <a
-      href="#home"
-      class="navbar-brand"
+      href="#"
+      class="navbar-brand fw-bold"
       >KULINERAN</a
     >
 

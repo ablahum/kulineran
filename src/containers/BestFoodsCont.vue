@@ -1,6 +1,8 @@
 <template>
   <div class="py-5">
     <div class="row mb-4">
+      <BreadcrumbComp />
+
       <div class="col-6">
         <h2>Menu <span class="fw-bold">Terbaik</span></h2>
       </div>
@@ -22,11 +24,11 @@
 </template>
 
 <script>
-import { FoodCardComp, ButtonComp } from '@/components'
+import { FoodCardComp, ButtonComp, BreadcrumbComp } from '@/components'
 
 export default {
   name: 'BestFoodsCont',
-  components: { FoodCardComp, ButtonComp },
+  components: { FoodCardComp, ButtonComp, BreadcrumbComp },
   props: {
     products: Object,
   },
