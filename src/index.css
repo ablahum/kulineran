@@ -36,3 +36,9 @@ p {
   color: #000;
   border-color: var(--primary);
 }
+
+.home,
+.foods,
+.food-detail {
+  min-height: 90.5vh;
+}

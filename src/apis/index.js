@@ -19,3 +19,8 @@ export const getSpecificProduct = async (productId) => {
   const url = `http://localhost:3000/products/${productId}`
   return await axios.get(url)
 }
+
+export const createOrder = async (payload) => {
+  const url = 'http://localhost:3000/cart'
+  return await axios.post(url, payload)
+}
