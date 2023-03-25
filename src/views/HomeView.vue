@@ -1,24 +1,22 @@
 <template>
-  <div class="home container">
-    <NavbarCont />
+  <NavbarCont />
 
+  <div class="home container">
     <HeroCont />
 
     <BestFoodsCont :products="products" />
-
-    <!-- <FooterCont /> -->
   </div>
+
+  <FooterCont />
 </template>
 
 <script>
 import { getBestProducts } from '@/apis'
-// import { FooterCont, HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
-import { HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
+import { FooterCont, HeroCont, NavbarCont, BestFoodsCont } from '@/containers'
 
 export default {
   name: 'HomeView',
-  // components: { NavbarCont, HeroCont, FooterCont, BestFoodsCont },
-  components: { NavbarCont, HeroCont, BestFoodsCont },
+  components: { NavbarCont, HeroCont, FooterCont, BestFoodsCont },
 
   data() {
     return {

@@ -25,7 +25,6 @@
       "image": "nasi-rames.jpg"
     }
   ],
-
   "products": [
     {
       "id": 1,
@@ -100,22 +99,21 @@
       "image": "lontong-opor-ayam.jpg"
     }
   ],
-
   "cart": [
     {
-      "id": 1,
-      "amount": "1",
+      "amount": 10,
+      "info": "super pedas",
       "products": {
-        "id": 2,
-        "code": "K-02",
-        "name": "Nasi Goreng Telur",
-        "price": 14000,
+        "id": 1,
+        "code": "K-01",
+        "name": "Sate Ayam",
+        "price": 16000,
         "is-ready": true,
-        "image": "nasi-goreng-telor.jpg"
-      }
+        "image": "sate-ayam.jpg"
+      },
+      "id": 1
     }
   ],
-
   "orders": [
     {
       "id": 1,

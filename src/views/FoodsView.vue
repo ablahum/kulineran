@@ -1,21 +1,23 @@
 <template>
-  <div class="foods container">
-    <NavbarCont />
+  <NavbarCont />
 
+  <div class="foods container">
     <FoodsCont
       :products="products"
       :keyword="handleSearch"
     />
   </div>
+
+  <FooterCont />
 </template>
 
 <script>
 import { getAllProducts, getProductBySearch } from '@/apis'
-import { FoodsCont, NavbarCont } from '@/containers'
+import { FoodsCont, NavbarCont, FooterCont } from '@/containers'
 
 export default {
   name: 'FoodsView',
-  components: { NavbarCont, FoodsCont },
+  components: { NavbarCont, FoodsCont, FooterCont },
 
   data() {
     return {

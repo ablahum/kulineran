@@ -7,7 +7,7 @@
     <div class="card shadow rounded">
       <img
         :src="'products/' + product.image"
-        class="card-img-top"
+        class="card-img-top img-thumbnail"
         alt="product image"
       />
       <div class="card-body">
