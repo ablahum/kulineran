@@ -101,17 +101,52 @@
   ],
   "cart": [
     {
-      "amount": 10,
-      "info": "super pedas",
+      "amount": 1,
       "products": {
-        "id": 1,
-        "code": "K-01",
-        "name": "Sate Ayam",
-        "price": 16000,
+        "id": 4,
+        "code": "K-04",
+        "name": "Mie Ayam Bakso",
+        "price": 14000,
         "is-ready": true,
-        "image": "sate-ayam.jpg"
+        "image": "mie-ayam-bakso.jpg"
       },
       "id": 1
+    },
+    {
+      "amount": 1,
+      "products": {
+        "id": 6,
+        "code": "K-06",
+        "name": "Bakso",
+        "price": 10000,
+        "is-ready": true,
+        "image": "bakso.jpg"
+      },
+      "id": 2
+    },
+    {
+      "amount": 3131,
+      "products": {
+        "id": 2,
+        "code": "K-02",
+        "name": "Nasi Goreng Telur",
+        "price": 14000,
+        "is-ready": true,
+        "image": "nasi-goreng-telor.jpg"
+      },
+      "id": 3
+    },
+    {
+      "amount": 1,
+      "products": {
+        "id": 8,
+        "code": "K-08",
+        "name": "Kentang Goreng",
+        "price": 5000,
+        "is-ready": true,
+        "image": "kentang-goreng.jpg"
+      },
+      "id": 4
     }
   ],
   "orders": [

@@ -41,7 +41,7 @@
                 class="mx-2"
               />
 
-              <span class="badge bg-primary">99+</span>
+              <span class="badge bg-primary">{{ cartAmount }}</span>
             </router-link>
           </li>
         </ul>
@@ -63,7 +63,31 @@
 </template>
 
 <script>
+import { getCart } from '@/apis'
+
 export default {
   name: 'NavbarCont',
+
+  data() {
+    return {
+      cartAmount: 0,
+    }
+  },
+
+  methods: {
+    async getCartAmount() {
+      try {
+        const res = await getCart()
+
+        this.cartAmount = res.data.length
+      } catch (err) {
+        console.log(err)
+      }
+    },
+  },
+
+  mounted() {
+    this.getCartAmount()
+  },
 }
 </script>
