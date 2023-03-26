@@ -99,7 +99,20 @@
       "image": "lontong-opor-ayam.jpg"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "amount": 10,
+      "products": {
+        "id": 2,
+        "code": "K-02",
+        "name": "Nasi Goreng Telur",
+        "price": 14000,
+        "is-ready": true,
+        "image": "nasi-goreng-telor.jpg"
+      },
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "id": 1,
