@@ -9,7 +9,7 @@
         <th scope="col">Jumlah</th>
         <th scope="col">Harga</th>
         <th scope="col">Sub Total</th>
-        <th scope="col"></th>
+        <th scope="col">Hapus</th>
       </tr>
     </thead>
     <tbody>
@@ -38,10 +38,6 @@
         <td>Rp. {{ item.products.price }}</td>
         <td class="fw-bold">Rp. {{ getSubtotal(item.products.price, item.amount) }}</td>
         <td>
-          <button class="btn btn-outline-primary text-primary me-2">
-            <font-awesome-icon icon="fa-solid fa-pen-to-square" />
-          </button>
-
           <button
             class="btn btn-outline-danger"
             @click="deleteItem(item.id)"
