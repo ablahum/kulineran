@@ -37,8 +37,13 @@ p {
   border-color: var(--primary);
 }
 
+.text-primary {
+  color: var(--primary) !important;
+}
+
 .home,
 .foods,
-.food-detail {
+.food-detail,
+.cart {
   min-height: 90.5vh;
 }

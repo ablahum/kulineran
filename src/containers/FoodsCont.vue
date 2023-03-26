@@ -3,30 +3,18 @@
     <div class="row mb-4">
       <BreadcrumbComp />
 
-      <div class="col">
-        <h2>Daftar <span class="fw-bold">Makanan</span></h2>
+      <div class="col-6">
+        <TitleComp
+          :subtitle="'Daftar'"
+          :title="'Makanan'"
+        />
       </div>
 
-      <div class="col">
-        <div class="input-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Cari makanan..."
-            aria-label="search"
-            aria-describedby="basic-addon1"
-            @keyup="keyword"
-          />
-
-          <span
-            class="input-group-text"
-            id="basic-addon1"
-            ><font-awesome-icon
-              icon="fa-solid fa-magnifying-glass"
-              class="me-2"
-            />
-          </span>
-        </div>
+      <div class="col-6">
+        <SearchComp
+          :placeholder="'Cari makanan...'"
+          :keyup="keyword"
+        />
       </div>
     </div>
 
@@ -37,11 +25,11 @@
 </template>
 
 <script>
-import { FoodCardComp, BreadcrumbComp } from '@/components'
+import { TitleComp, FoodCardComp, BreadcrumbComp, SearchComp } from '@/components'
 
 export default {
   name: 'FoodsCont',
-  components: { FoodCardComp, BreadcrumbComp },
+  components: { TitleComp, FoodCardComp, BreadcrumbComp, SearchComp },
   props: {
     products: Object,
     keyword: Function,

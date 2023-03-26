@@ -9,8 +9,8 @@ import './index.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBagShopping, faArrowRight, faArrowLeft, faEye, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faArrowRight, faArrowLeft, faEye, faCartShopping, faMagnifyingGlass, faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBagShopping, faArrowRight, faArrowLeft, faEye, faCartShopping, faMagnifyingGlass)
+library.add(faBagShopping, faArrowRight, faArrowLeft, faEye, faCartShopping, faMagnifyingGlass, faTrash, faPenToSquare)
 
 createApp(App).use(router).use(ToastPlugin).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

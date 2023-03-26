@@ -1,7 +1,10 @@
 <template>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb mb-2">
-      <li class="breadcrumb-item">
+      <li
+        class="breadcrumb-item"
+        aria-current="page"
+      >
         <router-link
           to="/"
           class="text-dark text-decoration-none"
@@ -21,10 +24,14 @@
       </li>
 
       <li
-        class="breadcrumb-item active"
+        class="breadcrumb-item"
         aria-current="page"
       >
-        Food Order
+        <router-link
+          to="/products"
+          class="text-dark text-decoration-none"
+          >Food Details</router-link
+        >
       </li>
     </ol>
   </nav>
