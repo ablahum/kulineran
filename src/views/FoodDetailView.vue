@@ -5,7 +5,7 @@
     <FoodDetailCont
       :product="product"
       :order="order"
-      :setOrder="setOrder"
+      :createOrder="createOrder"
     />
   </div>
 
@@ -38,7 +38,7 @@ export default {
       }
     },
 
-    async setOrder() {
+    async createOrder() {
       try {
         this.order.products = this.product
 

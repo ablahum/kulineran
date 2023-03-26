@@ -4,7 +4,10 @@
       <BreadcrumbComp />
 
       <div class="col">
-        <h2>Detail <span class="fw-bold">Makanan</span></h2>
+        <TitleComp
+          :subtitle="'Detail'"
+          :title="'Makanan'"
+        />
       </div>
     </div>
 
@@ -22,7 +25,7 @@
           <h3 class="fw-bold mb-2">{{ product.name }}</h3>
 
           <h4>
-            Harga: <span class="fw-bold">{{ product.price }}</span>
+            Harga: Rp. <span class="fw-bold">{{ product.price }}</span>
           </h4>
 
           <hr class="mt-2 mb-0" />
@@ -63,15 +66,15 @@
           <div class="d-flex justify-content-between">
             <ButtonComp
               :destination="'/foods'"
-              :btnType="'btn-outline-primary col-5'"
+              :btnType="'btn-outline-primary col-5 fw-bold'"
               :iconName="'fa-arrow-left'"
               :title="'KEMBALI'"
             />
 
             <button
               type="submit"
-              class="btn btn-primary col-6"
-              @click="setOrder"
+              class="btn btn-primary col-6 fw-bold"
+              @click="createOrder"
             >
               <font-awesome-icon
                 icon="fa-solid fa-cart-shopping"
@@ -86,15 +89,15 @@
 </template>
 
 <script>
-import { BreadcrumbComp, ButtonComp } from '@/components'
+import { BreadcrumbComp, TitleComp, ButtonComp } from '@/components'
 
 export default {
-  name: 'FoodDetail',
-  components: { BreadcrumbComp, ButtonComp },
+  name: 'FoodDetailCont',
+  components: { BreadcrumbComp, TitleComp, ButtonComp },
   props: {
     product: Object,
     order: Object,
-    setOrder: Function,
+    createOrder: Function,
   },
 }
 </script>

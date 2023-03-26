@@ -29,3 +29,8 @@ export const getCart = async () => {
   const url = 'http://localhost:3000/cart'
   return await axios.get(url)
 }
+
+export const deleteCartItem = async (productId) => {
+  const url = `http://localhost:3000/cart/${productId}`
+  return await axios.delete(url)
+}

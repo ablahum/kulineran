@@ -41,7 +41,7 @@
                 class="mx-2"
               />
 
-              <span class="badge bg-primary">{{ cartAmount }}</span>
+              <span class="badge bg-primary">{{ updateCart ? updateCart.length : cartAmount }}</span>
             </router-link>
           </li>
         </ul>
@@ -67,6 +67,8 @@ import { getCart } from '@/apis'
 
 export default {
   name: 'NavbarCont',
+
+  props: { updateCart: Array },
 
   data() {
     return {

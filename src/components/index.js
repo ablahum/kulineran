@@ -1,3 +1,6 @@
 export { default as FoodCardComp } from './FoodCardComp'
 export { default as ButtonComp } from './ButtonComp'
 export { default as BreadcrumbComp } from './BreadcrumbComp'
+export { default as TableComp } from './TableComp'
+export { default as SearchComp } from './SearchComp'
+export { default as TitleComp } from './TitleComp'

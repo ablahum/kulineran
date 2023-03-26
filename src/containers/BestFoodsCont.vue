@@ -4,7 +4,10 @@
       <BreadcrumbComp />
 
       <div class="col-6">
-        <h2>Menu <span class="fw-bold">Terbaik</span></h2>
+        <TitleComp
+          :subtitle="'Menu'"
+          :title="'Terbaik'"
+        />
       </div>
 
       <div class="col-6 text-end">
@@ -24,11 +27,11 @@
 </template>
 
 <script>
-import { FoodCardComp, ButtonComp, BreadcrumbComp } from '@/components'
+import { FoodCardComp, TitleComp, ButtonComp, BreadcrumbComp } from '@/components'
 
 export default {
   name: 'BestFoodsCont',
-  components: { FoodCardComp, ButtonComp, BreadcrumbComp },
+  components: { TitleComp, FoodCardComp, ButtonComp, BreadcrumbComp },
   props: {
     products: Object,
   },
