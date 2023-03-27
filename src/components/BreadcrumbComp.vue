@@ -22,16 +22,11 @@
           >Foods</router-link
         >
       </li>
-
       <li
         class="breadcrumb-item"
         aria-current="page"
       >
-        <router-link
-          to="/products"
-          class="text-dark text-decoration-none"
-          >Food Details</router-link
-        >
+        Food Details
       </li>
     </ol>
   </nav>
