@@ -101,7 +101,8 @@
   ],
   "cart": [
     {
-      "amount": 10,
+      "amount": 2,
+      "info": "pedas 1 extra pedas 1",
       "products": {
         "id": 2,
         "code": "K-02",
@@ -111,6 +112,43 @@
         "image": "nasi-goreng-telor.jpg"
       },
       "id": 1
+    },
+    {
+      "amount": 1,
+      "products": {
+        "id": 9,
+        "code": "K-09",
+        "name": "Lontong Opor Ayam",
+        "price": 18000,
+        "is-ready": true,
+        "image": "lontong-opor-ayam.jpg"
+      },
+      "id": 2
+    },
+    {
+      "products": {
+        "id": 7,
+        "code": "K-07",
+        "name": "Pangsit 6 pcs",
+        "price": 5000,
+        "is-ready": true,
+        "image": "pangsit.jpg"
+      },
+      "amount": 2,
+      "id": 3
+    },
+    {
+      "amount": 2,
+      "info": "extra super pedas leve 5",
+      "products": {
+        "id": 5,
+        "code": "K-05",
+        "name": "Mie Goreng",
+        "price": 13000,
+        "is-ready": true,
+        "image": "mie-goreng.jpg"
+      },
+      "id": 4
     }
   ],
   "orders": [

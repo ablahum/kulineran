@@ -51,8 +51,6 @@ export default {
             duration: 3000,
             dismissible: true,
           })
-
-          this.$router.push({ path: '/foods' })
         } else {
           this.$toast.error('Jumlah pesanan harus diisi', {
             type: 'error',
