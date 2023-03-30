@@ -70,6 +70,12 @@ export default {
             duration: 3000,
             dismissible: true,
           })
+
+          this.$router.push({ path: '/order-created' })
+
+          this.items.map((item) => {
+            return this.deleteOne(item.id)
+          })
         } else {
           this.$toast.error('Nama dan nomor meja harus diisi', {
             type: 'error',
