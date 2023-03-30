@@ -74,7 +74,7 @@
             <button
               type="submit"
               class="btn btn-primary col-6 fw-bold"
-              @click="createOrder"
+              @click="addOne"
             >
               <font-awesome-icon
                 icon="fa-solid fa-cart-shopping"
@@ -97,7 +97,7 @@ export default {
   props: {
     product: Object,
     order: Object,
-    createOrder: Function,
+    addOne: Function,
   },
 }
 </script>
