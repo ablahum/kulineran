@@ -44,6 +44,7 @@ p {
 .home,
 .foods,
 .food-detail,
-.cart {
+.cart,
+.new-order {
   min-height: 90.5vh;
 }
