@@ -6,6 +6,8 @@
       :items="items"
       :totalPrice="totalPrice"
       :deleteItem="deleteOne"
+      :order="order"
+      :checkout="checkout"
     />
   </div>
 
@@ -13,7 +15,7 @@
 </template>
 
 <script>
-import { deleteCartItem, getCart } from '@/apis'
+import { createCheckout, deleteCartItem, getCart } from '@/apis'
 import { NavbarCont, FooterCont, CartCont } from '@/containers'
 
 export default {
@@ -23,6 +25,7 @@ export default {
   data() {
     return {
       items: [],
+      order: {},
     }
   },
 
@@ -49,6 +52,32 @@ export default {
         })
 
         this.getAll()
+      } catch (err) {
+        console.log(err)
+      }
+    },
+
+    async checkout() {
+      try {
+        this.order.items = this.items
+
+        if (this.order.name && this.order.table) {
+          await createCheckout(this.order)
+
+          this.$toast.success('Berhasil membuat pesanan', {
+            type: 'success',
+            position: 'top-right',
+            duration: 3000,
+            dismissible: true,
+          })
+        } else {
+          this.$toast.error('Nama dan nomor meja harus diisi', {
+            type: 'error',
+            position: 'top-right',
+            duration: 3000,
+            dismissible: true,
+          })
+        }
       } catch (err) {
         console.log(err)
       }

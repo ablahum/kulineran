@@ -5,7 +5,7 @@
     <FoodDetailCont
       :product="product"
       :order="order"
-      :createOrder="createOrder"
+      :addOne="addOne"
     />
   </div>
 
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { createOrder, getSpecificProduct } from '@/apis'
+import { addToCart, getSpecificProduct } from '@/apis'
 import { FoodDetailCont, NavbarCont, FooterCont } from '@/containers'
 
 export default {
@@ -38,12 +38,12 @@ export default {
       }
     },
 
-    async createOrder() {
+    async addOne() {
       try {
         this.order.products = this.product
 
         if (this.order.amount) {
-          await createOrder(this.order)
+          await addToCart(this.order)
 
           this.$toast.success('Berhasil menambahkan ke keranjang', {
             type: 'success',
