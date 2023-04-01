@@ -22,12 +22,6 @@
           >Foods</router-link
         >
       </li>
-      <li
-        class="breadcrumb-item"
-        aria-current="page"
-      >
-        Food Details
-      </li>
     </ol>
   </nav>
 </template>
